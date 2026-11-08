@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+# Client-only mod: lets it load on servers that don't have it installed.
+displayTest="IGNORE_ALL_VERSION"
+
+[[mods]]
+modId="hidetab"
+version="${file.jarVersion}"
+displayName="HideTab"
+description='''
+Hides the player list that appears when you hold the Tab key.
+'''
+
+[[dependencies.hidetab]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.hidetab]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="CLIENT"
